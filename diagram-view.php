@@ -94,6 +94,20 @@ $tampil=mysql_db_query($db,"select * from tblpenyebaran where tahun='$tahun' ord
 		
 			$persen=round(((int)$row[3]/(int)$total)*100,2);
 			$lebar=$persen*2;
+			?>
+		<tr ><?
+			?><td width="99" align="left"><font face="verdana" size="2"><? echo $row[1]; ?></font></td>
+		<?
+			?><td width="293" align="left"><a href="#" title="<? echo $row[3]; ?> Orang">
+			<img src="./img/diagram.jpg" width="<? echo $lebar; ?>" height="12"/ border="0"></a><font face="verdana" size="2">&nbsp;
+			<a href="#" title="<? echo $row[3]; ?> Orang" style="text-decoration:none"><font color="#00CC33"><? echo $persen; ?> %</font></a>
+			</td>
+		<?
+			?></tr>
+			<?
+		}
+		?>
+</table>
 
 
 
