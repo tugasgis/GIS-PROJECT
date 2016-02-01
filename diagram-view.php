@@ -52,7 +52,15 @@ case "p";
 		}
 		?>
 </table>
-
+	<font face="verdana" size="2" color="#666666"><br />Total Penderita : <? echo $total; ?></font>
+		</p>
+		<?
+	}else{
+		?>
+		<font color="#FF0000" face="verdana" size="2"><b>Belum ada data!!</b></font>
+		<?
+	}
+	break;
 }
 
 ?>
