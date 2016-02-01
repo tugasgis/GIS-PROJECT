@@ -63,6 +63,10 @@ case "p";
 	break;
 }
 
+case "t";
+	//tampilkan data berdasarkan tahun
+	$tahun=$_GET['tahun'];
+	
 ?>
 
 
