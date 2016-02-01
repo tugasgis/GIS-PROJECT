@@ -108,19 +108,25 @@ $tampil=mysql_db_query($db,"select * from tblpenyebaran where tahun='$tahun' ord
 		}
 		?>
 </table>
+<font face="verdana" size="2" color="#666666"><br />Total Penderita : <? echo $total; ?></font>
+		</p>
+		<?
+	}else{
+		?>
+		<font color="#FF0000" face="verdana" size="2"><b>Belum ada data!!</b></font>
+		<?
+	}
+	break;
 
 
 
+default;
+		
+	?><p align="center"><font face="verdana" size="2" color="#666666"><b>Catatan : </b>Silahkan pilih nama Penyakit atau Tahun yang akan ditampilkan dalam diagram balok<br /></font></p>
+	<p align="center">&nbsp;</p>
+	<?
+		
+	break;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+?>
